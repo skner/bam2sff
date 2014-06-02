@@ -1,7 +1,13 @@
-CODE_DIR = src
+.PHONY: src all clean bamtools
 
-.PHONY: src
+all: src 
 
-src:
-	$(MAKE) -C $(CODE_DIR)
-    
+src: bamtools
+	$(MAKE) -C src
+
+bamtools:
+	cd bamtools
+	
+clean:
+	$(MAKE) -C src clean
+	
