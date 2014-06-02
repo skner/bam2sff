@@ -6,7 +6,7 @@ src: bamtools
 	$(MAKE) -C src
 
 bamtools:
-	cd bamtools
+	./make_bamtools.sh
 	
 clean:
 	$(MAKE) -C src clean
