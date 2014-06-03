@@ -1,11 +1,13 @@
-.PHONY: src all clean bamtools
+BAMTOOLS = bamtools/lib/libbamtools.a
+
+.PHONY: src all clean
 
 all: src 
 
-src: bamtools
+src: $(BAMTOOLS)
 	$(MAKE) -C src
 
-bamtools:
+$(BAMTOOLS):
 	./make_bamtools.sh
 	
 clean:
