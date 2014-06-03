@@ -1,5 +1,5 @@
 INCLUDE=-I ../bamtools/src/ -I file-io/ -I Util/
-LIBS=-lpthread -lbamtools   -L ../bamtools/lib/ 
+LIBS=-lz -lpthread ../bamtools/lib/libbamtools.a
 OBJ=file-io/sff_read.o \
     file-io/sff.o \
     file-io/sff_file.o \
@@ -37,10 +37,10 @@ OBJ=file-io/sff_read.o \
 
 all: bam2sff sff2bam
 bam2sff: bam2sff.cpp $(OBJ)
-	g++ $(CXXFLAFS) -o $@  bam2sff.cpp $(OBJ) $(INCLUDE) $(LIBS) 
+	g++ $(CXXFLAGS) -o $@  bam2sff.cpp $(OBJ) $(INCLUDE) $(LIBS) 
 
 sff2bam: sff2bam.cpp $(OBJ)
-	g++ $(CXXFLAFS) -o $@ sff2bam.cpp $(OBJ) $(INCLUDE) $(LIBS) 
+	g++ $(CXXFLAGS) -o $@ sff2bam.cpp $(OBJ) $(INCLUDE) $(LIBS) 
 
 
 clean:
