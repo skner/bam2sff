@@ -1,3 +1,0 @@
-[submodule "bamtools"]
-	path = bamtools
-	url = git@github.com:lvaruzza/bamtools.git
