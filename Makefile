@@ -8,7 +8,7 @@ src: $(BAMTOOLS)
 	$(MAKE) -C src
 
 $(BAMTOOLS):
-	./make_bamtools.sh
+	./compile_bamtools.sh
 	
 clean:
 	$(MAKE) -C src clean
