@@ -7,5 +7,9 @@ Code extracted from https://github.com/iontorrent/TS, adpated to compile as stan
 
 Tested on Mac OS X
 
+To compile run:
+
+make_all.sh
+
 
 
