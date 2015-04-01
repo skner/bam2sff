@@ -465,7 +465,7 @@ int main(int argc, const char *argv[])
 */
 		uint16_t nFlows2 = flow_order2.length();
 
-		while(nBase < sff->rheader->n_bases && nFlow < nFlows2)
+		while(nBase < sff->rheader->n_bases) // && nFlow < nFlows2) WHAT IF Flow with nFlow = nFlows2 is a homopolymer ?!?!
 		{
 		  if(bases[nBase] == preBase)
 		  {

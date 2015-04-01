@@ -1,5 +1,5 @@
 INCLUDE=-I ../bamtools/src/ -I file-io/ -I Util/
-LIBS=-lz -lpthread ../bamtools/lib/libbamtools.a
+LIBS=-lpthread ../bamtools/lib/libbamtools.a -lz
 OBJ=file-io/sff_read.o \
     file-io/sff.o \
     file-io/sff_file.o \
