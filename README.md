@@ -4,6 +4,7 @@ bam2sff
 forked from lvaruzza/bam2sff
 
 Changes:
+
 *found a small compiling issue with Linux GCC
 *fixed a major error in bam2sff.cpp for flow index = flow_order2.length()
 
@@ -15,6 +16,7 @@ Code extracted from https://github.com/iontorrent/TS, adpated to compile as stan
 Tested on Ubuntu 14.10 64bit
 
 Installation requirements:
+
 -cmake
 -zlib
 -TODO 
